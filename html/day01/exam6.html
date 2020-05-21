@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="a.jsp">
+	<fieldset style="width: 400px">
+		<table>
+		<tr>
+			<td><label for="name">이름 :</label></td>
+			<td><input type="text" name="name" id="name"></td>
+		</tr>
+		<tr>
+			<td><label for="pwd">비밀번호 :</label></td>
+			<td><input type="text" name="pwd" id="pwd" ></td>
+		</tr>
+		<tr>
+			<td>성별 :</td>
+			<td>
+				<input type="radio" name="gender" id="M" value="M" ><label for="M">남자</label>
+				<input type="radio" name="gender" id="F" value="F"><label for="F">여자</label>
+			</td>
+		</tr>
+		<tr>
+			<td>취미 :</td>
+			<td>
+				<input type="radio" name="hobby" id="a" value="movie" ><label for="a">영화</label>
+				<input type="radio" name="hobby" id="b" value="ani"><label for="b">만화</label>
+				<input type="radio" name="hobby" id="c" value="soccer" ><label for="c">축구</label>
+				<input type="radio" name="hobby" id="d" value="swim"><label for="d">수영</label>
+			</td>
+		</tr>
+		<tr>
+			<td>관심분야 :</td>
+			<td>
+				<input type="radio" name="hobby" id="e" value="com" ><label for="e">컴퓨터</label>
+				<input type="radio" name="hobby" id="f" value="music"><label for="f">음악</label>
+				<input type="radio" name="hobby" id="g" value="cook" ><label for="g">요리</label>
+				<input type="radio" name="hobby" id="h" value="sports"><label for="h">스포츠</label>
+			</td>
+		</tr>
+		<tr>
+			<td>직업 :</td>
+			<td>
+				<select>
+					<option value="self">자영업</option>
+					<option value="free">프리렌서</option>
+					<option value="sel">셀러리맨</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>신용카드 :</td>
+			<td>
+				<select multiple="multiple">
+					<option value="lg">LG카드</option>
+					<option value="sam">삼성카드</option>
+					<option value="bc">비씨카드</option>
+					<option value="kuk">국민카드</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>자기소개 :</td>
+			<td><textarea rows="5" cols="40"></textarea></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+			<div style="text-align: center;">
+				<button>전송</button>
+				<button type="reset">취소</button>
+			</div>
+			</td>
+		</tr>
+		</table>
+	</fieldset>
+	</form>
+</body>
+</html>

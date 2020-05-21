@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="a.jsp" method="get">
+	<fieldset>
+		<legend>기본 정보</legend>
+		<label for="userid">아이디 : </label>
+		<input type="text" name="userid" id="userid" placeholder="아이디입력!" autofocus="autofocus">
+		<br>
+		<label for="name">이름 : </label>
+		<input type="text" name="name" id="name" value="홍길동" placeholder="이름입력!" readonly="readonly">
+		<br>
+		<label for="pwd">비밀번호 : </label>
+		<input type="password" name="userpwd" id="pwd" required="required"><br>
+	</fieldset>
+	<fieldset>
+		<legend>추가 정보</legend>
+		과일 : <input type="checkbox" name="fruit" value="1" id="pear">
+		<label for="pear">배</label>
+		<input type="checkbox" name="fruit" value="2" id="apple">
+		<label for="apple">사과</label><br>
+		
+		성별 : <label><input type="radio" name="gender" value="M"> 남자</label>
+		<label><input type="radio" name="gender" value="F"> 여자</label><br><br>
+	</fieldset>
+	<br>
+	<fieldset>
+		<input type="submit" value="전송">
+	</fieldset>
+	</form>
+</body>
+</html>

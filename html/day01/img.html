@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>img 태그 - 이미지 보여주기</h1>
+	<img alt="강아지 이미지" src="../image/1.png"><br>
+	<!-- alt 속성 - 이미지를 설명해 주는 대체 첵스트 -->
+	
+	<img alt="눈 - 식물" src="../image/back.jpg" title="툴팁" width="150" height="100"><br>
+	<img alt="그림이 존재하지 않습니다." src="../image/없는 이미지" title="툴팁"><br>
+	
+	<h1>audio 태그</h1>
+	<audio src="../audio/Kalimba.mp3" 
+		controls="controls" autoplay="autoplay" preload="auto" loop="loop"></audio>
+	
+	<audio controls="controls">
+		<source src="../audio/Kalimba.mp3" type="audio/mp3">
+		<source src="../audio/Kalimba.ogg" type="audio/ogg">
+	</audio>
+	<!-- mp3파일과 ogg 파일을 제공하면 모든 브라우저에서 음악을 재생할 수 잇음 -->
+	
+	<h2>video 태그</h2>
+	<video src="../audio/Wildlife.mp4" controls="controls" autoplay="autoplay"
+		preload="auto" loop="loop" width="300" height="200"></video>
+		
+	<video controls="controls" poster="../image/back.jpg">
+		<source src="../audio/Wildlife.mp4" type="video/mp4">
+		<source src="../audio/Wildlife.webm" type="video/webm">
+	</video>
+</body>
+</html>
