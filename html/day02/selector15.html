@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	p::selection{ /* 사용자가 드래그한 글자를 선택함 */
+		background: black;
+		color: yellow;
+	}
+	a{
+		text-decoration: none;
+	}
+	a:visited {
+		color: orange;
+	}
+	a:link::after {
+		content: ' - ' attr(href);	
+	}
+	/* :link => href 속성을 가지고 있는 a 태그를 선택함
+		:visited => 방문했던 링크를 가지고 있는 a태그를 선택함 */
+		
+	input:not([type=password]){
+		background: green;
+	}
+	/* 선택자를 반대로 적용함 */
+</style>
+</head>
+<body>
+	<h1>Lorem ipsum dolor sit amet</h1> 
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+	<p>Nunc nisl turpis, aliquet et gravida non, facilisis a sem.</p> 
+	
+	<h1><a>Nothing</a></h1> 
+	<h1><a href=http://hani.co.kr>한겨레</a></h1> 
+	<h1><a href="http://www.w3.org/">W3C</a></h1> 
+	<h1><a href="https://github.com/">Github</a></h1>
+	<br>
+	<input type="password" /> 
+	<input type="text" /> 
+	<input type="password" /> 
+	<input type="text" /> 
+</body>
+</html>

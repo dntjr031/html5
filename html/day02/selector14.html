@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	p{
+		counter-increment: rint;
+	}
+	P::before{ /* 태그 앞에 위치하는 공간 */
+		content: counter(rint)".";
+	}
+	P::after { /* 태그 뒤에 위치하는 공간 */
+		content: " - " attr(data-page) "page";
+	}
+	p::first-letter {
+		font-size: 3em;
+	}
+</style>
+</head>
+<body>
+	<h1>Lorem ipsum dolor sit amet</h1> 
+	<p data-page="52">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	<p data-page="273">Aenean ac erat et massa vehicula laoreet consequat et sem.</p>
+</body>
+</html>

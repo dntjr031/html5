@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	/* 동위 선택자 */
+	
+	/* h1선택자 바로 뒤에 위치하는 형제인  h2하나를 선택 */
+	h1 + h2{
+		color: red;
+	}
+	
+	/* h1선택자 뒤에 위치하는 형제인  h2선태자 모두를 선택 */
+	h1 ~ h2{
+		background: skyblue;
+	}
+	/* 반응 선택자 */
+	h3:hover{ /* h3 태그에 마우스를 올릴 때에 color속성에 green 키워드를 적용 */
+		color: green;
+	}
+	h3:active{ /* h3태그를 마우스로 클릭할 때에 color 속성에 red키워드를 적용 */
+		color: red;
+	}
+</style>
+</head>
+<body>
+	<h1>Header - 1</h1> 
+	<h2>Header - 2</h2> 
+	<h2>Header - 2</h2> 
+	<h2>Header - 2</h2> 
+	<h2>Header - 2</h2> 
+	
+	<h3>User Action Selector</h3> 
+</body>
+</html>
