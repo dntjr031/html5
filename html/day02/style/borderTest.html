@@ -21,9 +21,43 @@
 .box2 td {
 	border: 1px solid orange;
 }
+
+.box3{
+	width: 300px;
+	border-collapse: collapse;
+}
+.box3 th{
+	border-bottom: 1px solid blue;
+	background: pink;
+}
+.box3 td{
+	border-bottom: 1px solid red;
+}
+
+div{
+	width: 300px;
+	height: 200px;
+	border-bottom: 3px dotted green;
+	border-top: 1px dashed red;
+	border-left: 5px solid blue;
+	border-right: 4px double orange;
+	margin: 5px 10px 15px 20px;
+}
+h1{
+	border: 1px solid gray;
+	margin: 0;
+}
+h1:nth-of-type(2) {
+		margin: 10px 20px; /* 상하 좌우 바깥 여백 */
+		border-radius: 10px;
+}
 </style>
 </head>
 <body>
+	<h1>margin, padding</h1>
+	<div>
+		div1	
+	</div>
 	<TABLE class="box2">
 		<TR>
 			<Th>제목1</Th>
@@ -41,5 +75,20 @@
 			<TD>6</TD>
 		</TR>
 	</TABLE>
+	<h1>table2</h1>
+	<table class="box3">
+		<tr>
+			<th>제목</th>
+			<th>제목</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+	</table>
 </body>
 </html>
