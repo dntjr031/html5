@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+#all{
+	border: 1px solid gray;
+	width: 700px;
+	margin: 0 auto;
+	padding: 5px;
+}
+
+h1 {
+	font-size: 1.4em;
+}
+
+table{
+	border: 1px solid gray;
+	border-collapse: collapse;
+	width: 90%;
+	margin: 10px;
+}
+
+thead th{
+	background: #e0e0e0;
+	border: 1px solid gray;
+	padding: 5px;
+	font-size: 0.8em;
+}
+
+tbody td{
+	border: 1px solid gray;
+	padding: 5px;
+	font-size: 0.8em;
+}
+
+#list{
+	text-align: center;
+}
+
+#search{
+	text-align: center;
+}
+
+#write{
+	text-align: right;
+}
+
+</style>
+</head>
+<body>
+	<div id="all">
+		<h1>자유 게시판 - 글 목록</h1>
+		<table>
+			<thead>
+				<tr>
+					<th>번호</th>
+					<th>제목</th>
+					<th>작성자</th>
+					<th>작성일</th>
+					<th>조회수</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>안녕하세요</td>
+					<td>관리자</td>
+					<td>2014-02-25</td>
+					<td>17</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>질문입니다</td>
+					<td>홍길동</td>
+					<td>2014-02-27</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>추천해주세요</td>
+					<td>김연아</td>
+					<td>2014-03-03</td>
+					<td>11</td>
+				</tr>
+			</tbody>
+		</table>
+		<form action="ac.jsp">
+			<div id="list">
+				<a href="#">[1]</a> <a href="#">[2]</a> <a href="#">[3]</a>
+			</div>
+			<div id="search">
+				<select>
+					<option>제목</option>
+				</select> <input type="text"> <input type="submit" value="검색">
+			</div>
+			<div id="write">
+				<a href="#">글쓰기</a>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
